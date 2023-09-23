@@ -1,7 +1,8 @@
 #include "processor.h"
 #include "linux_parser.h"
 
-/*
+/*  -------------------------------------------Logic Implemented------------------------------------------------
+
 PrevIdle = previdle + previowait
 Idle = idle + iowait
 

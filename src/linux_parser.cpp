@@ -16,7 +16,7 @@ using std::vector;
 
 
 
-// DONE: An example of how to read data from the filesystem
+//An example of how to read data from the filesystem
 string LinuxParser::OperatingSystem() {
   string line;
   string key;
@@ -41,7 +41,7 @@ string LinuxParser::OperatingSystem() {
 
 
 
-// DONE: An example of how to read data from the filesystem
+//An example of how to read data from the filesystem
 string LinuxParser::Kernel() {
   string os, kernel, version;
   string line;
@@ -80,7 +80,7 @@ vector<int> LinuxParser::Pids() {
 
 
 
-// TODO: Read and return the system memory utilization
+//Read and return the system memory utilization
 float LinuxParser::MemoryUtilization() { 
 
  float Mem_total = 0.0 , Mem_free = 0.0;
@@ -109,7 +109,7 @@ float LinuxParser::MemoryUtilization() {
 
 
 
-// TODO: Read and return the system uptime
+//Read and return the system uptime
 long LinuxParser::UpTime() { 
 std::string line;
  std::string sys_uptime;
@@ -126,7 +126,7 @@ long uptime;
 
 
 
-// TODO: Read and return the number of jiffies for the system
+//Read and return the number of jiffies for the system
 long LinuxParser::Jiffies() {  
   std::vector<string> Jiff = LinuxParser::CpuUtilization();
   long total_sys_jiffies;
@@ -140,8 +140,8 @@ long LinuxParser::Jiffies() {
 
 
 
-// TODO: Read and return the number of active jiffies for a PID
-// REMOVE: [[maybe_unused]] once you define the function
+//Read and return the number of active jiffies for a PID
+// 
 long LinuxParser::ActiveJiffies(int pid) { 
 
   long Pid_jiffies;
@@ -170,7 +170,7 @@ long LinuxParser::ActiveJiffies(int pid) {
 
 
 
-// TODO: Read and return the number of active jiffies for the system
+//Read and return the number of active jiffies for the system
 long LinuxParser::ActiveJiffies() { 
   std::vector<string> Jiff = LinuxParser::CpuUtilization();
   long Active_Jiffies;
@@ -260,7 +260,7 @@ int LinuxParser::RunningProcesses() {
   return R_process;
 } 
 
-// TODO: Read and return the command associated with a process
+//Read and return the command associated with a process
 string LinuxParser::Command(int pid) { 
 std::string Command;
     std::ifstream stream (kProcDirectory + to_string(pid) + kCmdlineFilename);
