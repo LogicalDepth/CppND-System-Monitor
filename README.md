@@ -5,8 +5,6 @@ This project known as System Monitor displays the information of system resource
 
 ![System Monitor](images/monitor.png)
 
-## Udacity Linux Workspace
-
 
 
 ## ncurses
