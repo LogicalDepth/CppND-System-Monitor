@@ -27,5 +27,6 @@ This project uses [Make](https://www.gnu.org/software/make/). The Makefile has f
 2. Build the project: `make build`
 
 3. Run the resulting executable: `./build/monitor`
-![Starting System Monitor](images/starting_monitor.png)
 
+
+![System_Monitor](https://github.com/LogicalDepth/CppND-System-Monitor/assets/92685394/dabfe4fa-7624-4177-b7e0-33e9271ed799)
