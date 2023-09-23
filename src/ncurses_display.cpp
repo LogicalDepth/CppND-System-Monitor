@@ -15,7 +15,7 @@ using std::to_string;
 // 2% is one bar(|)
 std::string NCursesDisplay::ProgressBar(float percent) {
   std::string result{"0%"};
-  int size{50};
+  int size{55};
   float bars{percent * size};
 
   for (int i{0}; i < size; ++i) {
@@ -57,9 +57,9 @@ void NCursesDisplay::DisplayProcesses(std::vector<Process>& processes,
   int row{0};
   int const pid_column{2};
   int const user_column{9};
-  int const cpu_column{16};
-  int const ram_column{26};
-  int const time_column{35};
+  int const cpu_column{19};
+  int const ram_column{27};
+  int const time_column{36};
   int const command_column{46};
   wattron(window, COLOR_PAIR(2));
   mvwprintw(window, ++row, pid_column, "PID");
